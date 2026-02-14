@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03626820118757DF808D3B73 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502B005A29875260BF6FBC95 /* ChatView.swift */; };
+		1E05DE38051952B0BCA1064E /* HatzClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B813C5D08152DEBCA12E79 /* HatzClient.swift */; };
+		3741BA3E3F3F5E098A23ABEE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA1EB1CC5853F5A1B477A2 /* SettingsView.swift */; };
+		5A0FAFC6F3655A14A649CD03 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10E48AB053B50B6A14A36D1 /* Models.swift */; };
+		827BB7221E235A24BED99199 /* ChatStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A025268BB27C5807880733FE /* ChatStore.swift */; };
+		AB03A9152F40199400925DF5 /* MarkdownText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB03A9142F40199000925DF5 /* MarkdownText.swift */; };
+		AB03A9172F4019A700925DF5 /* ComposerTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB03A9162F4019A000925DF5 /* ComposerTextView.swift */; };
+		AB03A9192F40209500925DF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB03A9182F40209500925DF5 /* Assets.xcassets */; };
+		AB5EECAE2F40D05B0087DA4D /* UploadedFilesPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5EECAD2F40D0570087DA4D /* UploadedFilesPickerView.swift */; };
+		C7CEBAA8081158C79F5C3148 /* HatzChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB31EF18D75F94A87CBA22 /* HatzChatApp.swift */; };
+		C87BEAE3204D530B95340722 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B9D93C7B2A5F809A465286 /* Keychain.swift */; };
+		DF4968A345865C05AFD9959C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FBBED7B78E5B419D74F611 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		502B005A29875260BF6FBC95 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		5052FF15B1B05926BD67A86C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71B813C5D08152DEBCA12E79 /* HatzClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatzClient.swift; sourceTree = "<group>"; };
+		8192D45866F35FE9B220F4BF /* HatzChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HatzChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A025268BB27C5807880733FE /* ChatStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStore.swift; sourceTree = "<group>"; };
+		A3B9D93C7B2A5F809A465286 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		AB03A9142F40199000925DF5 /* MarkdownText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownText.swift; sourceTree = "<group>"; };
+		AB03A9162F4019A000925DF5 /* ComposerTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposerTextView.swift; sourceTree = "<group>"; };
+		AB03A9182F40209500925DF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB5EECAD2F40D0570087DA4D /* UploadedFilesPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadedFilesPickerView.swift; sourceTree = "<group>"; };
+		BBFB31EF18D75F94A87CBA22 /* HatzChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatzChatApp.swift; sourceTree = "<group>"; };
+		D3AA1EB1CC5853F5A1B477A2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E7FBBED7B78E5B419D74F611 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F10E48AB053B50B6A14A36D1 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4F1E235C0175CBBB720F037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5CB185C187005A38BFAE731A = {
+			isa = PBXGroup;
+			children = (
+				C4AF742E21AC54E9AA742FF7 /* HatzChat */,
+				A4001AD72279510C834E13F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4001AD72279510C834E13F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8192D45866F35FE9B220F4BF /* HatzChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4AF742E21AC54E9AA742FF7 /* HatzChat */ = {
+			isa = PBXGroup;
+			children = (
+				5052FF15B1B05926BD67A86C /* Info.plist */,
+				BBFB31EF18D75F94A87CBA22 /* HatzChatApp.swift */,
+				E7FBBED7B78E5B419D74F611 /* ContentView.swift */,
+				AB5EECAD2F40D0570087DA4D /* UploadedFilesPickerView.swift */,
+				502B005A29875260BF6FBC95 /* ChatView.swift */,
+				F10E48AB053B50B6A14A36D1 /* Models.swift */,
+				A025268BB27C5807880733FE /* ChatStore.swift */,
+				AB03A9142F40199000925DF5 /* MarkdownText.swift */,
+				AB03A9162F4019A000925DF5 /* ComposerTextView.swift */,
+				71B813C5D08152DEBCA12E79 /* HatzClient.swift */,
+				A3B9D93C7B2A5F809A465286 /* Keychain.swift */,
+				D3AA1EB1CC5853F5A1B477A2 /* SettingsView.swift */,
+				AB03A9182F40209500925DF5 /* Assets.xcassets */,
+			);
+			path = HatzChat;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20EEB758E656543BA3B5C104 /* HatzChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF2E37FC45345FE98A72ABD5 /* Build configuration list for PBXNativeTarget "HatzChat" */;
+			buildPhases = (
+				AFA80E6BB8525F92B71B380B /* Sources */,
+				E4F1E235C0175CBBB720F037 /* Frameworks */,
+				D75E1797E1F253AE80BA6BDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HatzChat;
+			productName = HatzChat;
+			productReference = 8192D45866F35FE9B220F4BF /* HatzChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BACDD31C3575C63B032B327 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					20EEB758E656543BA3B5C104 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 92E1F28DECCE5EE18D08B4C1 /* Build configuration list for PBXProject "HatzChat" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5CB185C187005A38BFAE731A;
+			productRefGroup = A4001AD72279510C834E13F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20EEB758E656543BA3B5C104 /* HatzChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D75E1797E1F253AE80BA6BDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB03A9192F40209500925DF5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFA80E6BB8525F92B71B380B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7CEBAA8081158C79F5C3148 /* HatzChatApp.swift in Sources */,
+				AB03A9172F4019A700925DF5 /* ComposerTextView.swift in Sources */,
+				DF4968A345865C05AFD9959C /* ContentView.swift in Sources */,
+				03626820118757DF808D3B73 /* ChatView.swift in Sources */,
+				AB03A9152F40199400925DF5 /* MarkdownText.swift in Sources */,
+				5A0FAFC6F3655A14A649CD03 /* Models.swift in Sources */,
+				827BB7221E235A24BED99199 /* ChatStore.swift in Sources */,
+				1E05DE38051952B0BCA1064E /* HatzClient.swift in Sources */,
+				AB5EECAE2F40D05B0087DA4D /* UploadedFilesPickerView.swift in Sources */,
+				C87BEAE3204D530B95340722 /* Keychain.swift in Sources */,
+				3741BA3E3F3F5E098A23ABEE /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		634E1561296B5F6D97B7C6D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KY8P9V362C;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D3BD3E1B5B0555F1A84D999F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KY8P9V362C;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D807005550BB53B89B983A60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = KY8P9V362C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HatzChat/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HatzChat;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.routed.HatzChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EBD89C7103E75DC4856B642F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = KY8P9V362C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HatzChat/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HatzChat;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.routed.HatzChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92E1F28DECCE5EE18D08B4C1 /* Build configuration list for PBXProject "HatzChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3BD3E1B5B0555F1A84D999F /* Debug */,
+				634E1561296B5F6D97B7C6D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF2E37FC45345FE98A72ABD5 /* Build configuration list for PBXNativeTarget "HatzChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBD89C7103E75DC4856B642F /* Debug */,
+				D807005550BB53B89B983A60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BACDD31C3575C63B032B327 /* Project object */;
+}
