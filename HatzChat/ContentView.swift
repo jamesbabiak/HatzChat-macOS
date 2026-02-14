@@ -62,8 +62,8 @@ private struct SidebarView: View {
             }
         }
         .navigationTitle("HatzChat")
-        .onChange(of: renameFocused) { focused in
-            if !focused, renamingID != nil, !suppressCommitOnFocusLoss {
+        .onChange(of: renameFocused, initial: false) { oldValue, newValue in
+            if !newValue, renamingID != nil, !suppressCommitOnFocusLoss {
                 commitRenameIfNeeded()
             }
         }

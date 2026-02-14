@@ -40,7 +40,10 @@ final class AppsWindowController {
             object: w,
             queue: .main
         ) { [weak self] _ in
-            self?.window = nil
+            // Ensure we mutate MainActor-isolated state on the main actor.
+            Task { @MainActor in
+                self?.window = nil
+            }
         }
 
         self.window = w
@@ -48,3 +51,4 @@ final class AppsWindowController {
         NSApp.activate(ignoringOtherApps: true)
     }
 }
+

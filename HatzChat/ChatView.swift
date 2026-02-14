@@ -89,10 +89,10 @@ struct ChatView: View {
                 }
                 .padding(16)
             }
-            .onChange(of: store.selectedConversation?.messages.count ?? 0) { _ in
+            .onChange(of: store.selectedConversation?.messages.count ?? 0) { _, _ in
                 scrollToBottom(proxy)
             }
-            .onChange(of: pendingAppend) { _ in
+            .onChange(of: pendingAppend) { _, _ in
                 // Auto-scroll while streaming
                 scrollToBottom(proxy)
             }
@@ -213,12 +213,14 @@ Do not include debug/tool logs in the response.
             flushTask = Task {
                 while !Task.isCancelled {
                     try? await Task.sleep(nanoseconds: 80_000_000) // 80ms
-                    await flushPending(to: assistantID)
+                    await MainActor.run {
+                        flushPending(to: assistantID)
+                    }
                 }
             }
 
             do {
-                try await client.chatComplete(
+                _ = try await client.chatComplete(
                     model: convo.model,
                     messages: requestMessages,
                     fileUUIDs: fileUUIDs,
@@ -231,7 +233,9 @@ Do not include debug/tool logs in the response.
                 )
 
                 // Final flush
-                await flushPending(to: assistantID, force: true)
+                await MainActor.run {
+                    flushPending(to: assistantID, force: true)
+                }
 
                 // Final cleanup + persist once
                 await MainActor.run {
