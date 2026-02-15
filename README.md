@@ -6,7 +6,7 @@ A simple native macOS chat client for the Hatz API (https://ai.hatz.ai/v1).
 - Chat UI (sidebar chats, delete chats)
 - Local chat history stored on your Mac (~/Application Support/HatzChat/chats.json)
 - Streaming responses from `/chat/completions` when `stream=true`
-- Model list loaded from `/app/models`
+- Model list loaded from `/chat/models`
 - Support all available models and remembers last one used
 - File attachments via `/files/upload` and sending `file_uuids` with chat requests
 - Reuse existing uploaded files in new chats with file picker
